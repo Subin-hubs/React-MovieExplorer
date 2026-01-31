@@ -1,0 +1,173 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.movie-card {
+    width: 220px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.movie-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.fav-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.fav-btn .heart {
+    font-size: 16px;
+    color: #d33;
+}
+
+.favorite-list {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+/* Toast styles */
+.toast-container {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2000;
+}
+
+.toast {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+.fav-index {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background: #0b72ff;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(11, 114, 255, 0.12);
+    z-index: 50;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.movie-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.movie-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.movie-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+}
+
+.card-overview {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.2;
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Movie detail styles */
+.detail-container {
+    padding: 100px 20px 40px;
+    /* account for sticky navbar */
+    display: flex;
+    justify-content: center;
+}
+
+.detail-card {
+    display: flex;
+    gap: 24px;
+    max-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.detail-poster {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #eee;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 620px;
+}
+
+.detail-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.detail-meta {
+    color: #555;
+    font-size: 14px;
+}
+
+.detail-overview {
+    margin-top: 8px;
+    line-height: 1.45;
+}
